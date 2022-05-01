@@ -1,23 +1,22 @@
-# ywvv-JSFEPRESCHOOL
-Private repository for @ywvv
+# JS30
 
 ### Eco-sounds:
-https://rolling-scopes-school.github.io/ywvv-JSFEPRESCHOOL/eco-sounds/
+https://ywvv.github.io/JS30/eco-sounds/
 
 ### Audio-player:
-https://rolling-scopes-school.github.io/ywvv-JSFEPRESCHOOL/audio-player/
+https://ywvv.github.io/JS30/audio-player/
 
 ### Custom-video:
-https://rolling-scopes-school.github.io/ywvv-JSFEPRESCHOOL/custom-video/
+https://ywvv.github.io/JS30/custom-video/
 
 ### Random-jokes:
-https://rolling-scopes-school.github.io/ywvv-JSFEPRESCHOOL/random-jokes/
+https://ywvv.github.io/JS30/random-jokes/
 
 ### Image-galery:
-https://rolling-scopes-school.github.io/ywvv-JSFEPRESCHOOL/image-galery/
+https://ywvv.github.io/JS30/mage-galery/
 
 ### Movie-app:
-https://rolling-scopes-school.github.io/ywvv-JSFEPRESCHOOL/movie-app/
+https://ywvv.github.io/JS30/movie-app/
 
 ### Memory-game:
-https://rolling-scopes-school.github.io/ywvv-JSFEPRESCHOOL/memory-game/
+https://ywvv.github.io/JS30/memory-game/
