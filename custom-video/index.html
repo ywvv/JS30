@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>custom-video</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body">
+  <main class="main">
+    <div class="title-section">
+      <span class="title-line"></span>
+      <h2 class="title">Video</h2>
+      <span class="title-line"></span>
+    </div>
+    <section class="video-section">
+      <div class="video-player">
+        <div class="poster"></div>
+        <video class="video" src="assets/video/video.mp4"></video>
+        <button class="play-btn"></button>
+        <div class="controls">
+          <div class="controls-icon play-icon"></div>
+          <input class="progress" type="range" value="0" min="0" max="100" step="0.01">
+          <div class="controls-icon volume-icon"></div>
+          <input class="volume" type="range" value="0.4" min="0" max="1" step="0.01">
+          <div class="controls-icon fullscreen-icon"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <span class="footer__item"><pre>©   2022</pre></span>
+    <a class="footer__link" href="https://github.com/ywvv" target="_blank">github</a>
+    <a class="footer__link-rs" href="https://rs.school/js/" target="_blank"></a>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

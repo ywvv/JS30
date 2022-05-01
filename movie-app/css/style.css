@@ -1,0 +1,372 @@
+*:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 1);
+}
+
+.body {
+  background-color: #faea68;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  padding: 0 40px;
+}
+
+.header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 30px;
+  margin-right: 12px;
+  padding: 0 20px;
+  max-width: 300px;
+  width: calc(100% - 60px);
+  height: 55px;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: capitalize;
+  font-family: 'Noto Sans', sans-serif;
+  transition: .3s;
+}
+
+.search::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+	width: 25px;
+	height: 25px;
+	background-image: url(../assets/x.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+	cursor: pointer;
+  transition: .3s;
+}
+
+.search::-webkit-search-cancel-button:hover {
+  transform: scale(1.2);
+}
+
+.search:focus.error {
+  box-shadow: 0px 0px 0px 3px #a0192a;
+}
+
+.search:focus.error::placeholder {
+  color: #a0192a;
+}
+
+.submit {
+  background-color: transparent;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  line-height: 19px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: .3s;
+}
+
+.submit:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 1);
+}
+
+.main {
+  padding-top: 25px;
+  padding-bottom: 75px;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.films {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  padding: 75% 0;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.film-poster {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.film-title {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  color: white;
+  font-size: 30px;
+  opacity: 0;
+  transition: .6s;
+  background: linear-gradient(4deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7609418767507002) 29%, rgba(0,0,0,0) 100%);
+}
+
+.film-rating {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  opacity: 0;
+  transition: .6s;
+  margin-bottom: 10%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.film-description {
+  display: none;
+}
+
+.wrapper:hover .film-title,
+.wrapper:hover .film-rating {
+  opacity: 1;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  height: 90px;
+  align-items: center;
+  font-size: 20px;
+}
+
+.footer__link-rs {
+  display: inline-block;
+  width: 75px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../assets/rss.svg);
+  transition: all .3s ease-out;
+}
+
+.footer__link-rs:hover {
+  background-image: url(../assets/rss-color.svg);
+}
+
+.footer__link {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.footer__link::after {
+  margin-top: 5px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #faea68;
+  transform: scaleX(0);
+  transition: all .3s ease-out;
+}
+
+.footer__link:hover::after {
+  transform: scaleX(0.9);
+}
+
+.overlay {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  transition: .3s;
+  opacity: 0;
+}
+
+
+.popup {
+  display: flex;
+  width: 80%;
+  height: 75%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  flex-direction: column-reverse;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px -5px rgba(0, 0, 0, 1);
+}
+
+.popup-text {
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 45%, rgba(0,0,0,0) 100%);
+  padding: 80px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 10px;
+  height: 100%;
+  text-align: center;
+}
+
+
+.popup-title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: 500;
+}
+
+.popup-description {
+  font-size: 24px;
+  color: white;
+  font-weight: 200;
+}
+
+.popup-x {
+  width: 50px;
+  height: 50px;
+  top: 0;
+  right: 0;
+  position: absolute;
+  background-color: white;
+  background-image: url(../assets/x.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.popup-x:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1000px) {
+  .films {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .popup-title {
+    font-size: 25px;
+  }
+
+  .popup-description {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  .films {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .popup-text {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  .films {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .popup-title {
+    font-size: 22px;
+  }
+
+  .popup-description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .films {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 375px) {
+  .popup-text {
+    padding: 20px;
+  }
+
+  .popup-title {
+    font-size: 20px;
+  }
+
+  .popup-description {
+    font-size: 15px;
+  }
+
+  .submit {
+    width: 40px;
+    height: 40px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .search {
+    font-size: 17px;
+  }
+}

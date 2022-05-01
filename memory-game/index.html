@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>memory-game</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body">
+  <div class="overlay">
+    <img class="result-img" src="#" alt="img">
+    <div class="result"></div>
+    <div class="result-moves"></div>
+    <div class="result-time"></div>
+    <button class="retry-btn btn">Retry</button>
+  </div>
+  <main class="main">
+    <section class="menu">
+      <h1 class="title">Memory Game</h1>
+      <img class="menu-img" src="assets/svg/menu.svg" alt="img" draggable="false">
+      <div class="menu-buttons">
+        <button class="new-game-btn btn">New Game</button>
+        <button class="records-btn btn">Records</button>
+      </div>
+    </section>
+    <section class="game">
+      <div class="memory-game">
+        <div class="timer"></div>
+        <div class="memory-card" data-framework="pig">
+          <img class="front-face" src="assets/svg/pig.svg" alt="Pig" draggable="false">
+          <img class="back-face" src="assets/svg/logo.svg" alt="Memory Card" draggable="false">
+        </div>
+
+        <div class="memory-card" data-framework="pig">
+          <img class="front-face" src="assets/svg/pig.svg" alt="Pig" draggable="false">
+          <img class="back-face" src="assets/svg/logo.svg" alt="Memory Card" draggable="false">
+        </div>
+
+        <div class="memory-card" data-framework="dog">
+          <img class="front-face" src="assets/svg/dog.svg" alt="Dog" draggable="false">
+          <img class="back-face" src="assets/svg/logo.svg" alt="Memory Card" draggable="false">
+        </div>
+
+        <div class="memory-card" data-framework="dog">
+          <img class="front-face" src="assets/svg/dog.svg" alt="Dog" draggable="false">
+          <img class="back-face" src="assets/svg/logo.svg" alt="Memory Card" draggable="false">
+        </div>
+
+        <div class="memory-card" data-framework="cat">
+          <img class="front-face" src="assets/svg/cat.svg" alt="Cat" draggable="false">
+          <img class="back-face" src="assets/svg/logo.svg" alt="Memory Card" draggable="false">
+        </div>
+
+        <div class="memory-card" data-framework="cat">
+          <img class="front-face" src="assets/svg/cat.svg" alt="Cat" draggable="false">
+          <img class="back-face" src="assets/svg/logo.svg" alt="Memory Card" draggable="false">
+        </div>
+
+        <div class="memory-card" data-framework="fox">
+          <img class="front-face" src="assets/svg/fox.svg" alt="Fox" draggable="false">
+          <img class="back-face" src="assets/svg/logo.svg" alt="Memory Card" draggable="false">
+        </div>
+
+        <div class="memory-card" data-framework="fox">
+          <img class="front-face" src="assets/svg/fox.svg" alt="Fox" draggable="false">
+          <img class="back-face" src="assets/svg/logo.svg" alt="Memory Card" draggable="false">
+        </div>
+
+        <div class="memory-card" data-framework="bear">
+          <img class="front-face" src="assets/svg/bear.svg" alt="Bear" draggable="false">
+          <img class="back-face" src="assets/svg/logo.svg" alt="Memory Card" draggable="false">
+        </div>
+
+        <div class="memory-card" data-framework="bear">
+          <img class="front-face" src="assets/svg/bear.svg" alt="Bear" draggable="false">
+          <img class="back-face" src="assets/svg/logo.svg" alt="Memory Card" draggable="false">
+        </div>
+
+        <div class="memory-card" data-framework="sheep">
+          <img class="front-face" src="assets/svg/sheep.svg" alt="Sheep" draggable="false">
+          <img class="back-face" src="assets/svg/logo.svg" alt="Memory Card" draggable="false">
+        </div>
+
+        <div class="memory-card" data-framework="sheep">
+          <img class="front-face" src="assets/svg/sheep.svg" alt="Sheep" draggable="false">
+          <img class="back-face" src="assets/svg/logo.svg" alt="Memory Card" draggable="false">
+        </div>
+      </div>
+      <div class="game-buttons">
+        <button class="menu-btn btn">Back</button>
+        <button class="records-btn btn">Records</button>
+      </div>
+    </section class="game">
+    <section class="records">
+      <h3 class="records-title">Records</h3>
+      <ul class="records-list">
+        <li class="records-item"></li>
+        <li class="records-item"></li>
+        <li class="records-item"></li>
+        <li class="records-item"></li>
+        <li class="records-item"></li>
+        <li class="records-item"></li>
+        <li class="records-item"></li>
+        <li class="records-item"></li>
+        <li class="records-item"></li>
+        <li class="records-item"></li>
+      </ul>
+      <button class="back-btn btn">Back</button>
+    </section>
+  </main>
+  <footer class="footer container">
+    <span class="footer__item"><pre>©  2022</pre></span>
+    <a class="footer__link" href="https://github.com/ywvv" target="_blank">github</a>
+    <a class="footer__link-rs" href="https://rs.school/js/" target="_blank"></a>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>

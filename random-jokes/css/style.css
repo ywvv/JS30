@@ -1,0 +1,154 @@
+.body {
+  background-color: #faea68;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-size: 20px;
+}
+
+.container {
+  padding: 0 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 30px;
+}
+
+.main {
+  height: calc(100vh - 150px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.quotes-container {
+  min-height: 20%;
+  max-height: 60%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.lang-container {
+  display: flex;
+  width: 120px;
+  height: 60px;
+  background-color: black;
+  align-items: center;
+  border-radius: 45px;
+  justify-content: space-around;
+}
+
+.lang-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  background-color: transparent;
+  transition: .3s;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.lang-btn:hover {
+  transform: scale(1.1);
+}
+
+.button {
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 auto;
+  background-image: url(../assets/reload.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: .4s;
+}
+
+.button:hover {
+  filter: invert(1);
+}
+
+.quote {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-family: 'El Messiri', sans-serif;
+}
+
+.author {
+  font-size: 26px;
+  font-weight: 700;
+  font-family: 'Caveat', cursive;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  height: 60px;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer__link-rs {
+  display: inline-block;
+  width: 65px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../assets/rss.svg);
+  transition: all .3s ease-out;
+}
+
+.footer__link-rs:hover {
+  background-image: url(../assets/rss-color.svg);
+}
+
+.footer__link {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.footer__link::after {
+  margin-top: 5px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #faea68;
+  transform: scaleX(0);
+  transition: all .3s ease-out;
+}
+
+.footer__link:hover::after {
+  transform: scaleX(0.9);
+}
+
+.active {
+  /* color: black; */
+  /* background-color: white; */
+  box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 1);
+}
+
+/* @media (max-height: 800px) {
+  .quotes-container {
+    height: 55%;
+  }
+}
+
+@media (max-height: 500px) {
+  .quotes-container {
+    height: 60%;
+  }
+} */

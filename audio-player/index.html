@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>audio-player</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/favicon.ico">
+</head>
+<body class="body">
+  <main class="main">
+    <div class="player">
+      <div class="cover"></div>
+      <div class="buttons">
+        <button class="button play"></button>
+        <button class="button prev"></button>
+        <button class="button next"></button>
+      </div>
+      <div class="author">RY X</div>
+      <div class="song">Body Sun</div>
+      <div class="time">
+        <div class="current">00:00</div>
+        <div class="duration">05:00</div>
+      </div>
+      <audio class="audio" preload="auto" src="assets/audio/RY X - Body Sun.mp3"></audio>
+      <input class="range" type="range" value="0" min="0" max="100" step="0.1">
+      <a class="download button" href="assets/audio/RY X - Body Sun.mp3" download="RY X - Body Sun.mp3"></a>
+    </div>
+  </main>
+  <footer class="footer">
+    <span class="footer__item"><pre>©   2022</pre></span>
+    <a class="footer__link" href="https://github.com/ywvv" target="_blank">github</a>
+    <a class="footer__link-rs" href="https://rs.school/js/" target="_blank"></a>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

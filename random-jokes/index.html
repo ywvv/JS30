@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>random-jokes</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=El+Messiri&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body">
+  <header class="header container">
+    <div class="lang-container">
+      <button class="ru-btn lang-btn">ru</button>
+      <button class="en-btn lang-btn active">en</button>
+    </div>
+  </header>
+  <main class="main container">
+    <div class="quotes-container">
+      <p class="quote"></p>
+      <p class="author"></p>
+    </div>
+    <audio class="audio-click" src="assets/click.mp3" preload="auto"></audio>
+    <audio class="audio-reload" src="assets/reload.mp3" preload="auto"></audio>
+    <button class="button"></button>
+  </main>
+  <footer class="footer container">
+    <span class="footer__item"><pre>©  2022</pre></span>
+    <a class="footer__link" href="https://github.com/ywvv" target="_blank">github</a>
+    <a class="footer__link-rs" href="https://rs.school/js/" target="_blank"></a>
+  </footer>
+  <script src="quotes.json"></script>
+  <script src="index.js"></script>
+</body>
+</html>
