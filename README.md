@@ -13,7 +13,7 @@ https://ywvv.github.io/JS30/custom-video/
 https://ywvv.github.io/JS30/random-jokes/
 
 ### Image-galery:
-https://ywvv.github.io/JS30/mage-galery/
+https://ywvv.github.io/JS30/image-galery/
 
 ### Movie-app:
 https://ywvv.github.io/JS30/movie-app/
